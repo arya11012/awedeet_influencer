@@ -62,6 +62,7 @@ The architecture of the backend can be divided into the following structure:
   - influencerModel.js
 > routes
   - influencerRoutes.js
+```
 ## Folder Structure
 
 ### 1. `server.js`  
