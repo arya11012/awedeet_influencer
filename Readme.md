@@ -38,3 +38,18 @@ To run the Node.js application locally on your machine, follow these steps:
 6. **Test the apis**
    You can refer this documentation on how to test the apis
    [https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd]
+
+# Backend Architecture
+
+The architecture of the backend can be divided into the following structure:
+
+```
+- server.js
+> config
+  - db.js
+> controllers
+  - influencerController.js
+> models
+  - influencerModel.js
+> routes
+  - influencerRoutes.js
