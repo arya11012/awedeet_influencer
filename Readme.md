@@ -12,6 +12,16 @@ https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd
 The APIs are hosted on an AWS server  at:  
 [http://52.64.162.202:3000/api/v1/influencer](http://52.64.162.202:3000/api/v1/influencer)
 
+## API Endpoints
+
+| Endpoint                      | HTTP Method | Description                        | Query Params | Request Body                                                                                                  |
+|-------------------------------|-------------|------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------|
+| `/getAllInfluencerProfiles`   | GET         | Retrieve all profiles.            | None         | None                                                                                                        |
+| `/getInfluencerProfileById`   | GET         | Retrieve profile by ID.           | `id`         | None                                                                                                        |
+| `/updateInfluencerProfile`    | PUT         | Update an influencer profile.     | `id`         | `{ "likes": 1200, "comments": 150, "shares": 70, "followers": 1420, "audienceAgeRange": "25-34", "audienceGender": "Female" }` |
+| `/createInfluencerProfile`    | POST        | Add a new influencer profile.     | None         | `{ "name": "John Doe", "handle": "@johndoe", "likes": 1000, "comments": 100, "shares": 50, "followers": 1150, "audienceAgeRange": "18-24", "audienceGender": "Male" }` |
+| `/deleteInfluencerProfile`    | DELETE      | Delete an influencer profile.     | `id`         | None                                                                                                        |
+
 ---
 
 ## Local Deployment
