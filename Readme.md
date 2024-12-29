@@ -1,3 +1,6 @@
+## Project Overview
+
+This project is a backend application for managing influencer profiles, built with Node.js and MongoDB. It provides RESTful APIs for creating, retrieving, updating, and deleting influencer data, with the server deployed on AWS.
 
 ## Full Documentation
 The complete API documentation, including the deployed link and tests, is available on the following link:  
