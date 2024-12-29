@@ -1,4 +1,3 @@
-# API Documentation
 
 ## Full Documentation
 The complete API documentation, including the deployed link and tests, is available at the following link:  
