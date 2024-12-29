@@ -1,6 +1,6 @@
 
 ## Full Documentation
-The complete API documentation, including the deployed link and tests, is available at the following link:  
+The complete API documentation, including the deployed link and tests, is available on the following link:  
 [Postman Documentation](https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd)
 
 https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd
