@@ -8,7 +8,7 @@ https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd
 ---
 
 ## AWS Deployed Server
-The APIs are hosted on an AWS server  at:  
+The APIs are hosted on  AWS instance  at:  
 [http://52.64.162.202:3000/api/v1/influencer](http://52.64.162.202:3000/api/v1/influencer)
 
 ## API Endpoints
