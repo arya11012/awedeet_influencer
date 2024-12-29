@@ -3,6 +3,7 @@
 ## Full Documentation
 The complete API documentation, including the deployed link and tests, is available at the following link:  
 [Postman Documentation](https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd)
+[https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd]
 
 ---
 
@@ -25,3 +26,14 @@ To run the Node.js application locally on your machine, follow these steps:
    In the terminal, run the following command to install all dependencies:  
    ```bash
    npm i
+4. **Ensure MongoDB Compass is Installed**  
+   - Verify that MongoDB Compass is installed on your machine.  
+   - If not, download and install it from [MongoDB Compass](https://www.mongodb.com/products/tools/compass).
+
+5. **Start the Server**  
+   Run the following command in the terminal to start the server:  
+   ```bash
+   node server.js
+6. **Test the apis**
+   You can refer this documentation on how to test the apis
+   [https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd]
