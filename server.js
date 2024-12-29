@@ -2,7 +2,7 @@ const express=require('express')
 const mongoose =require('mongoose')
 const dotenv=require('dotenv')
 const cors=require('cors')
-const influencerRoutes=require("../server/routes/influencerRoutes")
+const influencerRoutes=require("./routes/influencerRoutes")
 const connectDB=require("./config/db")
 const morgan = require('morgan')
 

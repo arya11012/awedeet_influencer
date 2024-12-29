@@ -4,13 +4,16 @@ const InfluencerModel=require('../models/InfluencerModel')
 //get all influencer profiles
 exports.getAllInfluencerProfiles=async(req,res)=>{
     try{
+        //get all data in the model
         const Influencers=await InfluencerModel.find({});
+        //if empty return 200 status with message no influencers found
         if(!Influencers){
             return res.status(200).send({
                 success:true,
                 message:"No Influencers Found",
             })
         }
+        //else return the influencers profile
         return res.status(200).send({
             success:true,
             message:"All Influencers Profiles received:",
@@ -25,25 +28,28 @@ exports.getAllInfluencerProfiles=async(req,res)=>{
         })
     }
 }
-//get influecer profile by id
+//get influencer profile by id
 exports.getInfluencerProfileById=async(req,res)=>{
     try{
         const {id}=req.query;
 
         
         const Influencer=await InfluencerModel.findById(id);
+        //if id is not valid (type of id) return 400 status saying not valid format
         if (!mongoose.Types.ObjectId.isValid(id)) {
             return res.status(400).send({
                 success: false,
                 message: "Invalid influencer ID format",
             });
         }
+        //if not found 
         if(!Influencer){
             return res.status(200).send({
                 success:true,
                 message:"No Influencer with specified id found",
             })
         }
+        //if found return the influencer profile
         return res.status(200).send({
             success:true,
             message:"Influencers Profile Found :",
@@ -51,6 +57,7 @@ exports.getInfluencerProfileById=async(req,res)=>{
         })
     }
     catch(error){
+        //  handle errors
         console.log(error)
         return res.status(500).send({
             success:false,
@@ -64,6 +71,8 @@ exports.getInfluencerProfileById=async(req,res)=>{
 exports.createInfluencerProfile=async(req,res)=>{
     try{
         const {name,handle,likes,comments,shares,followers,audienceAgeRange,audienceGender}=req.body;
+        //all these fields are required and can not be empty
+        // If empty return 400 status
         if(!name||!handle||!likes||!comments||!shares||!followers || !audienceAgeRange || !audienceGender){
             return res.status(400).send({
                 success:false,
@@ -111,6 +120,7 @@ exports.createInfluencerProfile=async(req,res)=>{
         
     }
     catch(error){
+        //  handle errors
         console.log(error);
         return res.status(400).send({
         success: false,
@@ -198,6 +208,7 @@ exports.deleteInfluencerProfile=async(req,res)=>{
         });
     }
     catch(error){
+        //  handle errors
         console.error(error);
         return res.status(500).json({
             success: false,

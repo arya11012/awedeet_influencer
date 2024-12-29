@@ -1,13 +1,15 @@
 const mongoose=require('mongoose')
-
+//influencer schema 
+//all fileds are required except engagementRate which can be calculated from other variables
 const InfluencerSchema=new mongoose.Schema(
     {
 
         
+    //all fields are required except engagementRate which can be calculated from other variables
         name:{
             type:String,
             required:true,
-            trim:true,
+            trim:true,//to remove spaces
         },
         handle:{
             type:String,
@@ -56,7 +58,7 @@ const InfluencerSchema=new mongoose.Schema(
 
     },
     {
-        timestamps:true,
+        timestamps:true,//for updation time
     }
 );
 const InfluencerModel=mongoose.model('Influencer',InfluencerSchema);
