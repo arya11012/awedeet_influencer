@@ -1,13 +1,13 @@
-Apis Documentation
+**Apis Documentation**
  The full documentation of the apis along with the deployed link and tests  can be found on this link:
     https://documenter.getpostman.com/view/29256937/2sAYJ6DKxd
 
 
-AWS Deployed Server
+**AWS Deployed Server**
     The apis are hosted by me on AWS at:
     http://52.64.162.202:3000/api/v1/influencer
 
-Local Deployment
+**Local Deployment**
     To run the nodejs application locally on your machine 
     -clone this repository
     -navigate to the directory of this repository 
@@ -16,15 +16,15 @@ Local Deployment
     -Run "node server.js" to start the server
     -Test the apis
 
-Architecture
-The architecute of the backend can be divided into 
+**Architecture**
+ The architecute of the backend can be divided into 
     -server.js
     >config
-    -db.js
+      -db.js
     >controllers
-    -influencerController.js
+      -influencerController.js
     >models
-    -influencerModel.js
+      -influencerModel.js
     >routes
-    -influencerRoutes.js
+      -influencerRoutes.js
 
