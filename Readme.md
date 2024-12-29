@@ -62,3 +62,23 @@ The architecture of the backend can be divided into the following structure:
   - influencerModel.js
 > routes
   - influencerRoutes.js
+## Folder Structure
+
+### 1. `server.js`  
+The main entry point of the application. It initializes the server, connects to the database, and sets up middleware and API routes.
+
+### 2. `config`  
+This folder contains configuration files.  
+- **`db.js`**: Handles database connections and environment-specific settings.
+
+### 3. `controllers`  
+This folder houses the logic for handling incoming requests and generating appropriate responses.  
+- **`influencerController.js`**: Processes API requests related to influencer profiles.
+
+### 4. `models`  
+Defines the data structure and schema for the database.  
+- **`influencerModel.js`**: Specifies the schema for storing influencer profile data in MongoDB.
+
+### 5. `routes`  
+Maps API endpoints to their corresponding controller functions.  
+- **`influencerRoutes.js`**: Defines and organizes routes for influencer-related operations.
